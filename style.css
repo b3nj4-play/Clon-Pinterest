@@ -193,12 +193,21 @@ body h1 {
   color: white;
 }
 
-@media (max-width: 800px) {
-  nav {
-    display: none;
+/* Estilos base para el elemento */
+.nav {
+  width: 100%; 
+}
+
+/* Media query para laptops */
+@media screen and (min-width: 992px) {
+  .nav {
+    max-width: 576px;
   }
 }
 
-@media (max-width:576px) {
-  
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 991px) {
+  .nav {
+    max-width: 576px;
+  }
 }
